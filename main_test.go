@@ -35,6 +35,7 @@ func DeletaAlunoMock() {
 	database.DB.Delete(&aluno, ID)
 }
 
+
 func TestVerificaStatusCodeDaSaudacaoComParametro(t *testing.T) {
 	r := SetupDasRotasDeTeste()
 	r.GET("/:nome", controllers.Saudacoes)
